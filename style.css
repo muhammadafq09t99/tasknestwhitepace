@@ -1,0 +1,158 @@
+/*
+  Whitepace landing page clone
+  Intern task #06 - FentixTech
+  Developed by: Muhammad Afaq
+
+  Note: layout, grid and spacing is all Bootstrap 5 utility classes.
+  This file only has the stuff Bootstrap can't give us out of the box -
+  brand colors, fonts, the dot/network graphic and the section backgrounds.
+*/
+
+:root {
+  --navy: #0E1B3D;
+  --navy-soft: #16264F;
+  --sky: #BFDBFF;
+  --sky-light: #EAF3FF;
+  --text-dark: #1A1A2E;
+  --text-muted: #6B7280;
+  --dot-red: #EF4444;
+  --dot-yellow: #FBBF24;
+  --dot-teal: #14B8A6;
+  --dot-blue: #3B82F6;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5, .heading-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.text-muted-custom {
+  color: var(--text-muted);
+}
+
+.bg-navy {
+  background-color: var(--navy);
+}
+
+.bg-sky-light {
+  background-color: var(--sky-light);
+}
+
+/* buttons - navy pill on light sections, white pill on navy sections */
+.btn-navy {
+  background-color: var(--navy);
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.65rem 1.75rem;
+  border: none;
+}
+.btn-navy:hover {
+  background-color: var(--navy-soft);
+  color: #fff;
+}
+
+.btn-light-pill {
+  background-color: #fff;
+  color: var(--navy);
+  border-radius: 50px;
+  padding: 0.65rem 1.75rem;
+  border: none;
+  font-weight: 600;
+}
+.btn-light-pill:hover {
+  background-color: var(--sky-light);
+  color: var(--navy);
+}
+
+/* the flat placeholder blocks used in place of screenshots/illustrations,
+   same as the original Figma file (it ships with blue placeholder boxes,
+   not real product photos) */
+.image-placeholder {
+  background-color: var(--sky);
+  border-radius: 20px;
+  min-height: 320px;
+  width: 100%;
+}
+
+.image-placeholder-sm {
+  background-color: var(--sky);
+  border-radius: 16px;
+  min-height: 220px;
+  width: 100%;
+}
+
+/* dot / network graphic used for the "Work together" and
+   "Work with your favorite apps" sections */
+.dot-graphic {
+  width: 100%;
+  min-height: 260px;
+}
+
+.dot {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.dot-graphic-wrap {
+  position: relative;
+  height: 260px;
+}
+
+/* pricing card */
+.price-card {
+  border-radius: 20px;
+  border: 1px solid #E5E7EB;
+  background: #fff;
+}
+.price-card.featured {
+  border: 2px solid var(--navy);
+}
+.price-card .price-tag {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* testimonial card */
+.testimonial-card {
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #EEF0F3;
+}
+.quote-icon {
+  color: var(--sky);
+  font-size: 2rem;
+}
+.avatar-circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* sponsor logos row */
+.sponsor-icon {
+  font-size: 2rem;
+  color: #9CA3AF;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.75);
+}
+footer a:hover {
+  color: #fff;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--sky);
+  outline-offset: 2px;
+}
